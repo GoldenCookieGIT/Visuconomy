@@ -1,0 +1,6 @@
+name: Visuconomy
+version: '${version}'
+main: me.goldencookie.visuconomy.Visuconomy
+api-version: 1.17
+depend: [ Vault ]
+description: A way to visualize your server's economy!
