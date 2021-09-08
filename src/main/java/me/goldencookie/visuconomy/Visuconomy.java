@@ -7,7 +7,6 @@ public final class Visuconomy extends JavaPlugin {
     @Override
     public void onEnable() {
         vault = new VaultImpl();
-
     }
 
     @Override
