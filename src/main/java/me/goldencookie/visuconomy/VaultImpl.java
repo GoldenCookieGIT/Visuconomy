@@ -1,6 +1,5 @@
 package me.goldencookie.visuconomy;
 
-import me.goldencookie.visuconomy.web.Web;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -18,10 +17,10 @@ public class VaultImpl {
         }else{
             log.info("[Visuconomy] Successfully hooked into " + econ.getName());
             try{
-                Web.getInstance().start(port);
-                log.info("Started webserver on: " + port);
+                //Web.getInstance().start(port);
+                log.info("[Visuconomy] Started webserver on: " + port);
             }catch (Exception exception){
-                log.severe("Unable to start webserver, exception: ");
+                log.severe("[Visuconomy] Unable to start webserver, exception: ");
                 exception.printStackTrace();
             }
 
